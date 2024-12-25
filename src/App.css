@@ -1,0 +1,133 @@
+/* App.css */
+
+/* Background đổi màu liên tục */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad390, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Hiệu ứng đổi màu background */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container chính */
+div {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffdd59;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Section titles */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #ffc048;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+button {
+  background: #1dd1a1;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: #10ac84;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Inputs */
+input, select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #1dd1a1;
+  box-shadow: 0 0 5px rgba(29, 209, 161, 0.8);
+}
+
+/* Logs, Rules */
+pre {
+  background: #333;
+  color: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 200px;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Suspicious IP List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 5px 10px;
+  background: #444;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Add hover effects */
+ul li:hover {
+  background: #555;
+}
+
+/* Section styling */
+section {
+  margin-bottom: 30px;
+}
+
+/* Make labels and inputs inline */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
